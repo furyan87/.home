@@ -34,6 +34,9 @@ source "$HOME/.oh-my-zsh/init.zsh"
 source "$HOME/.aliases"
 source "$HOME/.exports"
 
+if [ -f "$HOME/.local.zshrc" ]; then
+	source $HOME/.local.zshrc
+fi
 
 # Customize to your needs...
 
