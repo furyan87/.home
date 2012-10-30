@@ -4,6 +4,9 @@
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
+export ZSH=$HOME/.oh-my-zsh/
+source $ZSH/oh-my-zsh.sh
+source "$DOT_HOME/git-flow-completion.zsh"
 
 # Set the key mapping style to 'emacs' or 'vi'.
 zstyle ':omz:editor' keymap 'vi'
@@ -26,13 +29,11 @@ zstyle ':omz:load' plugin 'archive' 'git' 'battery' 'nyan'
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':omz:prompt' theme 'sorin'
-#zstyle ':omz:prompt' theme 'nicoulaj'
+#zstyle ':omz:prompt' theme 'sorin'
+zstyle ':omz:prompt' theme 'nicoulaj'
 
 # This will make you shout: OH MY ZSHELL!
-source "$HOME/.oh-my-zsh/init.zsh"
-source "$HOME/.aliases"
-source "$HOME/.exports"
+source "$DOT_HOME/.aliases"
 
 if [ -f "$HOME/.local.zshrc" ]; then
 	source $HOME/.local.zshrc
