@@ -1,5 +1,0 @@
-#!/bin/sh
-
-set -e
-
-git branch | grep "^*" | sed 's/* //g'

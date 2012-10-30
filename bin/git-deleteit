@@ -1,3 +1,0 @@
-#!/bin/sh
-
-git status | grep deleted | sed 's/deleted://g' | sed 's/[#| ]//g' | xargs git rm
