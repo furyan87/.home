@@ -1,30 +1,42 @@
 #
-# Executes commands at the start of an interactive session.
+# Sets Oh My Zsh options.
 #
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
-#   Dominik Liebler <liebler.dominik@googlemail.com>
 #
 
-# Source Prezto.
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-fi
+# Set the key mapping style to 'emacs' or 'vi'.
+zstyle ':omz:editor' keymap 'vi'
 
-# Customize to your needs...
+# Auto convert .... to ../..
+zstyle ':omz:editor' dot-expansion 'yes'
 
-source "$DOT_HOME/git-flow-completion.zsh"
+# Set case-sensitivity for completion, history lookup, etc.
+zstyle ':omz:*:*' case-sensitive 'no'
 
-# Customize to your needs...
-source $DOT_HOME/.aliases
-source $DOT_HOME/funcs.sh
+# Color output (auto set to 'no' on dumb terminals).
+zstyle ':omz:*:*' color 'yes'
 
-set_editor
+# Auto set the tab and window titles.
+zstyle ':omz:terminal' auto-title 'yes'
 
-# load ~/.local.zshrc file, if it exists
+# Set the plugins to load (see $OMZ/plugins/).
+zstyle ':omz:load' plugin 'archive' 'git' 'battery' 'nyan'
+
+# Set the prompt theme to load.
+# Setting it to 'random' loads a random theme.
+# Auto set to 'off' on dumb terminals.
+zstyle ':omz:prompt' theme 'sorin'
+#zstyle ':omz:prompt' theme 'nicoulaj'
+
+# This will make you shout: OH MY ZSHELL!
+source "$HOME/.oh-my-zsh/init.zsh"
+source "$HOME/.aliases"
+source "$HOME/.exports"
+
 if [ -f "$HOME/.local.zshrc" ]; then
 	source $HOME/.local.zshrc
 fi
 
-# check for and install updates if available
-update
+# Customize to your needs...
+

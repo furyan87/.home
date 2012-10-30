@@ -1,35 +1,60 @@
+#Hashes
+
+hash -d workspace=~/work/eclipse_workspace/
+
+#Program aliases
 alias l='ls -lah'
+alias e='vim'
+alias l='ls -lah'
+
 
 # ack is http://betterthangrep.com
 alias ack='ack-grep'
 alias erln='erl -noshell'
 alias ns='netstat -tulpen | grep '
 
-alias clear='echo "don´t do that, use CTRL-L instead!"'
-
-# this damn shutdown thing annoys me anytime I'm forced to do this, so stop it!
-alias poweroff='sudo shutdown -h now'
-alias feierabend='poweroff'
-
-alias g='git'
-alias gs='git status'
-alias gpom='git push origin master'
-alias zstats='history | awk "{ print \$2 }" | sort | uniq -c | sort -nr'
-alias dg='df -h | grep -v "^\(tmpfs\|udev\|none\)"'
-
-# hash directories
-hash -d w=~/Workspace
-hash -d t=~/Workspace/talks
-hash -d app=/var/www/app
-hash -d log=/var/log
-hash -d init=/etc/init.d
-
-alias phpstorm="~/bin/PhpStorm-121.215/bin/phpstorm.sh >/dev/null 2>&1 &"
-
-GITHUB="https://github.com/domnikl"
+GITHUB="https://github.com/furyan87"
 
 if `which google-chrome > /dev/null`; then
 	alias gh="google-chrome $GITHUB >/dev/null 2>&1"
 else
 	alias gh="open $GITHUB"
 fi
+
+#Funny aliases
+alias wtf='dmesg'
+alias onoz='cat /var/log/errors.log'
+alias rtfm='man'
+
+alias visible='echo'
+alias invisible='cat'
+alias moar='more'
+alias tldr='less'
+alias alwayz='tail -f'
+
+alias icanhas='mkdir'
+alias gimmeh='touch'
+alias donotwant='rm'
+alias dowant='cp'
+alias gtfo='mv'
+alias nowai='chmod'
+
+alias hai='cd'
+alias iz='ls'
+alias plz='pwd'
+alias ihasbucket='df -h'
+
+alias inur='locate'
+alias iminurbase='finger'
+
+alias btw='nice'
+alias obtw='nohup'
+
+alias nomz='ps -aux'
+alias nomnom='killall'
+
+alias byes='exit'
+alias cya='reboot'
+alias kthxbai='halt'
+
+

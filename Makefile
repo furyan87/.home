@@ -4,7 +4,7 @@
 DEST_PATH = $(HOME)/.home
 
 # files to delete from $HOME
-DOT_FILES = $(HOME)/.zshrc $(HOME)/.gemrc $(HOME)/.gitconfig $(HOME)/.zprofile $(HOME)/.zlogin $(HOME)/.zlogout $(HOME)/.zshenv $(HOME)/.zpreztorc
+DOT_FILES = $(HOME)/.zshrc $(HOME)/.gitconfig $(HOME)/.gitignore $(HOME)/.vimrc
 
 # prezto Repository to be used
 PREZTO_REPO = https://github.com/sorin-ionescu/prezto.git
@@ -19,12 +19,6 @@ BUNDLE_BIN = `which bundle`
 PREZTO=.zprezto
 
 install: $(HOME)/$(PREZTO) clean $(DOT_FILES) theme $(LOCAL_SETTINGS_FILE) completions help
-<<<<<<< Updated upstream
-	touch $(HOME)/.z
-
-=======
-	
->>>>>>> Stashed changes
 clean:
 	@echo "cleaning dotfiles ..."
 	rm -f $(DOT_FILES)
@@ -44,37 +38,14 @@ $(HOME)/$(PREZTO):
 
 # sym links
 
-
-$(HOME)/.gemrc:
-	ln -s $(DEST_PATH)/.gemrc $(HOME)/.gemrc
-
 $(HOME)/.gitconfig:
 	ln -s $(DEST_PATH)/.gitconfig $(HOME)/.gitconfig
-
-
-
-
 
 $(HOME)/.zshrc:
 	ln -s $(DEST_PATH)/.zshrc $(HOME)/.zshrc
 
-$(HOME)/.zpreztorc:
-	ln -s $(DEST_PATH)/.zpreztorc $(HOME)/.zpreztorc
-
 $(HOME)/.zshenv:
 	ln -s $(DEST_PATH)/.zshenv $(HOME)/.zshenv
-
-$(HOME)/.zlogin:
-	ln -s $(DEST_PATH)/.zlogin $(HOME)/.zlogin
-
-$(HOME)/.zlogout:
-	ln -s $(DEST_PATH)/.zlogout $(HOME)/.zlogout
-
-$(HOME)/.zprofile:
-	ln -s $(DEST_PATH)/.zprofile $(HOME)/.zprofile
-
-theme:
-	ln -fs $(DEST_PATH)/themes/$(THEME) $(HOME)/$(PREZTO)/modules/prompt/functions/$(THEME)
 
 # local settings file
 $(LOCAL_SETTINGS_FILE):
