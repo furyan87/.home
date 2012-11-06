@@ -4,7 +4,7 @@
 DEST_PATH = $(HOME)/.home
 
 # files to delete from $HOME
-DOT_FILES = $(HOME)/.zshrc $(HOME)/.zshenv $(HOME)/.gitconfig $(HOME)/.gitignore $(HOME)/.vimrc $(HOME)/.vimbackup
+DOT_FILES = $(HOME)/.zshrc $(HOME)/.zshenv $(HOME)/.gitconfig $(HOME)/.gitignore $(HOME)/.vimrc $(HOME)/.vimbackup $(HOME)/.vim
 
 # prezto Repository to be used
 PREZTO_REPO = https://github.com/sorin-ionescu/prezto.git
