@@ -7,7 +7,7 @@ These are my dotfiles to set preferences for zsh and some handy commands for eve
 Installation is very simple, you just have to clone this repository to your home dir and run `make install`:
 
 ```bash
-git clone git://github.com/domnikl/.home.git $HOME/.home
+git clone git://github.com/furyan87/.home.git $HOME/.home
 cd $HOME/.home && make install
 ```
 
