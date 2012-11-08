@@ -1,17 +1,25 @@
 [diff]
 	color = auto
 	rename = copy
-
 [pager]
 	color = true
-
 [status]
 	color = true
-
-[alias]
-	pom = push origin master
-[user]
-	name = Dominik Liebler
-	email = liebler.dominik@googlemail.com
 [color]
 	diff = auto
+[user]
+  name = Stephen Prochnow
+  email = stephen.prochnow@googlemail.com
+[core]
+  autocrlf = input
+[log]
+  decorate = full
+[alias]
+  st = status
+  ci = commit
+  co = checkout
+  br = branch
+  gpr = pull --rebase
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  ffs = flow feature start
+  fff = flow feature finish
