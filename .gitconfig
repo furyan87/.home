@@ -11,7 +11,9 @@
 [alias]
 	pom = push origin master
 [user]
-	name = Dominik Liebler
-	email = liebler.dominik@googlemail.com
+	name = Stephen Prochnow
+	email = stephen.prochnow@googlemail.com
 [color]
 	diff = auto
+[core]
+	excludesfile = /home/stephen/.gitignore
