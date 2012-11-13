@@ -1,19 +1,27 @@
 [diff]
 	color = auto
 	rename = copy
-
 [pager]
 	color = true
-
 [status]
 	color = true
-
-[alias]
-	pom = push origin master
 [user]
 	name = Stephen Prochnow
 	email = stephen.prochnow@googlemail.com
 [color]
 	diff = auto
 [core]
-	excludesfile = /home/stephen/.gitignore
+  autocrlf = input
+	excludesfile = ${HOME}/.gitignore
+[log]
+  decorate = full
+[alias]
+  st = status
+  ci = commit
+  co = checkout
+  br = branch
+  gpr = pull --rebase
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  ffs = flow feature start
+  fff = flow feature finish
+	pom = push origin master

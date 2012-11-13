@@ -29,7 +29,7 @@ completions:
 
 ohmyzsh:
 	@echo "downloading oh-my-zsh"
-	@git clone https://github.com/furyan87/oh-my-zsh.git $(HOME)/.oh-my-zsh
+	@git clone git://github.com/robbyrussell/oh-my-zsh.git $(HOME)/.oh-my-zsh
 
 # sym links
 
