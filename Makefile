@@ -9,6 +9,8 @@ DOT_FILES = $(HOME)/.zshrc $(HOME)/.zshenv $(HOME)/.gitconfig $(HOME)/.gitignore
 # local .zshrc (gets inserted into .zshrc for local specialities)
 LOCAL_SETTINGS_FILE = $(HOME)/.local.zshrc
 
+LOCAL_EXPORT_FILE = $(HOME)/.local.exports
+
 install: clean $(DOT_FILES) $(LOCAL_SETTINGS_FILE) completions ohmyzsh help
 clean:
 	@echo "cleaning dotfiles ..."
@@ -50,6 +52,10 @@ $(HOME)/.vimrc:
 
 $(HOME)/.vim:
 	ln -s $(DEST_PATH)/.vim/ $(HOME)/.vim
+
+# local settings file
+$(LOCAL_SETTINGS_FILE):
+	touch $(LOCAL_SETTINGS_FILE)
 
 # local settings file
 $(LOCAL_SETTINGS_FILE):
