@@ -4,6 +4,8 @@ These are my dotfiles to set preferences for zsh and some handy commands for eve
 
 ## Installation
 
+!!!Warning: the current script force deletes a lot dot-files, use with caution!!!
+
 Installation is very simple, you just have to clone this repository to your home dir and run `make install`:
 
 ```bash
