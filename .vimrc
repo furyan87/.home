@@ -1,5 +1,9 @@
 set t_Co=256
 color smyck
+
+set encoding=utf8
+set fileencoding=utf8
+set so=14
 " Enable syntax highlighting
 syntax on
 filetype plugin on
