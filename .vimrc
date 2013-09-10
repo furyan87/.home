@@ -64,3 +64,14 @@ au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 "Search things
 set incsearch
 set hlsearch
+
+"Latex stuff
+set grepprg=grep\ -nH\ $*
+let g:tex_flavor='latex'
+set iskeyword+=;
+let g:Tex_DefaultTargetFormat = 'pdf'
+let g:Tex_MultipleCompileFormats = 'pdf'
+let g:Tex_CompileRule_pdf = 'pdflatex -interaction=nonstopmode $*'
+let g:Tex_GotoError = 0
+let g:Tex_ViewRule_pdf = 'evince'
+
