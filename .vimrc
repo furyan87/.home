@@ -15,6 +15,16 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 
+"Disabling cursors
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
+
 " Show trailing white spaces and hard tabs
 set list listchars=tab:»·,trail:·
 
