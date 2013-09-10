@@ -36,6 +36,9 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
+"Fall back into normal mode after 8 sec
+"au CursorHoldI * stopinsert
+
 "Disabling cursors
 map <up> <nop>
 map <down> <nop>
