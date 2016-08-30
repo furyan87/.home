@@ -59,19 +59,25 @@ export ZSH=$HOME/.oh-my-zsh/
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
+plugins=(zsh-autosuggestions)
+plugins=(deer)
 
 source "$DOT_HOME/.aliases"
 source "$HOME/.local.exports"
+source "$HOME/.local.aliases"
 
 if [ -f "$HOME/.local.zshrc" ]; then
 	source $HOME/.local.zshrc
 fi
 
 #Loading theme
-ZSH_THEME="sorin"
+ZSH_THEME="agnoster"
+DEFAULT_USER=`whoami`
+
 
 # set oh-my-zsh home directory
 source $ZSH/oh-my-zsh.sh
 # set directory for git-flow completion 
 source "$DOT_HOME/git-flow-completion.zsh"
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 

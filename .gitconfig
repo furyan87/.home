@@ -1,13 +1,14 @@
 [diff]
 	color = auto
 	rename = copy
+  tool = diffmerge
 [pager]
 	color = true
 [status]
 	color = true
 [user]
 	name = Stephen Prochnow
-	email = stephen.prochnow@googlemail.com
+	email = stephen.prochnow@virtual-solution.com
 [color]
 	diff = auto
 [core]
@@ -25,3 +26,7 @@
   ffs = flow feature start
   fff = flow feature finish
 	pom = push origin master
+  rbi = rebase -i
+  rh = reset --hard
+[commit]
+	template = /Users/sprochnow/.git_commit_template

@@ -1,11 +1,12 @@
 #Hashes
 
-hash -d workspace=~/work/eclipse_workspace/
+hash -d dev=~/dev/
 
 #Program aliases
 alias l='ls -lah'
 alias e='vim'
 alias l='ls -lah'
+alias g='git'
 
 
 # ack is http://betterthangrep.com
